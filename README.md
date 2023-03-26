@@ -13,5 +13,9 @@ The project is developed code first approach.
 2-	Go to Package manager console and run the command “update-database”
 3-	Now run the project 
  
+ # Data Generation 
+1-	Open SQL Scripts folder
+2-	Open generateData.sql file in SQL 
+3-	Run the SQL Queries 
 
 
