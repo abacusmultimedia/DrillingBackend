@@ -1,9 +1,9 @@
 # DrillingBackend
 
 # Introduction 
-    this API is responsible for performing CRUD operations. The solution contain only one project. Since, “EventsController” is responsible for Event Cruds, it provide an end point for retrieval of chart dat. 
+    This API is responsible for performing CRUD operations. The solution contain only one project. Since, “EventsController” is responsible for Event Cruds, it provide an end point for retrieval of chart dat. 
 
-#Tools
+# Tools
 	1-Dot net core
 	2-EF Core + tools
 
