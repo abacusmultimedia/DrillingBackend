@@ -3,6 +3,7 @@ using Drillingopt.Persistence.Context;
 using Drillingopt.Persistence.Modles;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace Drillingopt.Controllers
 {
@@ -32,6 +33,26 @@ namespace Drillingopt.Controllers
 
             }).ToListAsync();
         }
+
+        // GET:  
+        [HttpGet("Chart")]
+        public async Task<ActionResult<IEnumerable<BarchartDataDTO>>> GetChart()
+        {
+
+            var response = await
+                _context.Events.Select(e => new BarchartDataDTO
+                {
+                    Label = e.EventTitle,
+                    Stack = "a",
+                    Data = new List<long>() { e.End - e.Start },
+
+
+                }).ToListAsync();
+
+            return response;
+
+        }
+
 
 
         // GET:  
