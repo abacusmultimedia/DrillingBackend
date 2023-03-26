@@ -14,8 +14,8 @@ The project is developed code first approach.
 3-	Now run the project 
  
  # Data Generation 
-1-	Open SQL Scripts folder
-2-	Open generateData.sql file in SQL 
-3-	Run the SQL Queries 
+	1-Open SQL Scripts folder
+	2-Open generateData.sql file in SQL 
+	3-Run the SQL Queries 
 
 
