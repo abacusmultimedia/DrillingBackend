@@ -45,7 +45,7 @@ namespace Drillingopt.Controllers
                     Label = e.EventTitle,
                     Stack = "a",
                     Data = new List<long>() { e.End - e.Start },
-
+                    BackgroundColor = new List<string>() { e.BackgroundColor == null ? "" : e.BackgroundColor }
 
                 }).ToListAsync();
 
